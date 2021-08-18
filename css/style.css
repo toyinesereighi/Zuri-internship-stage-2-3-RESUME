@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Trocchi&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: auto;
+  background-color: rgba(206, 152, 161, 0.863);
+}
+.page-container {
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.skills-list{
+  display: flex;
+}
+.skill-left{
+  margin-left: 10px;
+}
+.first-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5px;
+  /* background-color: darkblue; */
+  /* height: 200px; */
+}
+
+.first-side .first-side-container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.first-side .first-side-container .image-container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.first-side .first-side-container .image-container img {
+  margin: auto;
+  text-align: center;
+  width: 350px;
+  height: 400px;
+
+}
+
+.first-side .first-side-container .personal-info {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.first-side .first-side-container .personal-info .name {
+  font-size: 31.9px;
+  font-family: 'Trocchi', serif;
+}
+
+.first-side .first-side-container .personal-info .contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  width: 150px;
+}
+
+.first-side .first-side-container .personal-info .contact-details i {
+  color: black;
+}
+
+.first-side .first-side-container .personal-info .skills .skills-list ul {
+  margin-top: 3px;
+  padding-left: 0px;
+}
+
+.first-side .first-side-container .personal-info .skills .skills-list ul li {
+  list-style-type: none;
+}
+
+.first-side .first-side-container .personal-info .hobbies {
+  width: 250px;
+}
+
+.second-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.second-side .second-side-container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+   justify-content: space-between;
+  gap: 90px;
+}
+
+footer {
+  font-family: 'Quicksand', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+   -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer .footer-container {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer .footer-container .images img {
+  width: 200px;
+}
+button{
+  background-color: salmon;
+  border-radius: 2px;
+  color: aqua;
+}
+
+@media (min-width: 1000px) {
+  .page-container {
+    -ms-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+    margin: 80px;
+  }
+  .second-side {
+    border-left: 1px solid black;
+    padding: 50px;
+  }
+}
+
+@media (max-width: 999px) {
+  .first-side {
+    border-bottom: 1px solid black;
+  }
+  .first-side .first-side-container {
+    margin-bottom: 30px;
+  }
+}
